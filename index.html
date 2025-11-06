@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/N.png">
+    <title>Nisaranun | Resume</title>
+
+    <!-- Google Fonts: Prompt -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 (ใช้เวอร์ชันเดียวทั้ง CSS/JS เพื่อลด conflict) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+    
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-semibold" href="#">My Resume</a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-4 text-center">
+                    <!-- แนะนำให้เปลี่ยนชื่อไฟล์รูปไม่ให้มีช่องว่าง เช่น GEN-AI.png -->
+                    <img src="img/GENAI.png" class="rounded-circle img-fluid" width="220" height="220" alt="Profile">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h1 class="mb-1">Nisaranun Kunladechakkararoj</h1>
+                    <p class="mb-1"><em>Computer Engineering and Artificial Intelligence | Faculty of Engineering and
+                            Technology</em></p>
+                    <a href="https://pim.ac.th" target="_blank" rel="noopener">
+                        <img src="img/pim_logo.png" alt="PIM" class="pim-icon">
+                    </a>
+                    <span> Panyapiwat Institute of Management</span>
+                    <hr>
+                    <h6 class="mb-1">Career Objective</h6>
+                    <p class="text-muted mb-0">
+                        Seeking a Data Analyst internship to acquire hands-on experience and apply my knowledge of Java, Databases,
+                        and Data Structures to support testing activities and improve software quality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Education</h2>
+            <!-- Carousel -->
+            <div id="eduCarousel" class="carousel slide" data-bs-touch="true" data-bs-interval="0">
+                <!-- จุดบอกสถานะ (indicators) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#eduCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#eduCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="card edu-card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-1">
+                                        Bachelor of Engineering in Computer Engineering and Artificial Intelligence
+                                        (B.Eng.) | PIM
+                                    </h5>
+                                    <small class="text-muted">2024 - Present</small>
+                                    <hr class="my-2">
+                                    <p class="text-muted mb-2">GPAX: 3.92</p>
+                                    <p class="text-muted mb-0">Panyapiwat Institute of Management | Pak-Kret,
+                                        Nonthaburi, Thailand</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="card edu-card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-1">Senior High School in Science-Mathematics-Technology
+                                    </h5>
+                                    <small class="text-muted">2021 - 2023</small>
+                                    <hr class="my-2">
+                                    <p class="text-muted mb-2">GPAX: 3.97</p>
+                                    <p class="text-muted mb-0">Suranari Wittaya 2 | Mueang, Nakhon Ratchasima, Thailand
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ปุ่มควบคุม -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#eduCarousel" data-bs-slide="prev"
+                    aria-label="Previous slide">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eduCarousel" data-bs-slide="next"
+                    aria-label="Next slide">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 fw-bold">Skills</h2>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold">Foreign Language</h5>
+                <p class="mb-0">English - intermediate in listening, speaking, reading, and writing (CEFR Level B1)</p>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-semibold">Computer</h5>
+                <ul class="mb-0">
+                    <li>Excellent in Microsoft Word, Microsoft PowerPoint, and Microsoft Excel</li>
+                    <li>Good at Web Development</li>
+                    <li>Proficient in querying the database</li>
+                    <li>Ability to learn new computer programs and applications quickly with little instruction</li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="fw-semibold">Technical</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge-skill">HTML</span>
+                    <span class="badge-skill">CSS</span>
+                    <span class="badge-skill">Bootstrap</span>
+                    <span class="badge-skill">Java</span>
+                    <span class="badge-skill">SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Contact</h2>
+
+            <!-- ใช้ ul.list-unstyled แทนการซ้อน <ol> เพื่อลด bug โครงสร้าง -->
+            <ul class="list-unstyled mb-4">
+                <li class="mb-1">
+                    <i class="bi bi-envelope-at me-1"></i> 6752300046<img src="img/at-sign.png" alt="@" width="17" height="12">stu.pim.ac.th</a>
+                </li>
+                <li class="mb-1">
+                    <i class="bi bi-telephone me-1"></i> 077-777-7777
+                </li>
+                <li class="mb-1">
+                    <i class="bi bi-geo-alt me-1"></i> Nonthaburi, Thailand
+                </li>
+                <li class="mb-1">
+                    <i class="bi bi-github me-1"></i>
+                    <a href="https://github.com/Nisaranun" target="_blank" rel="noopener">github.com/Nisaranun</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white-50">
+        <div class="container text-center small">
+            © 2025 Nisaranun
+            <button id="backToTop" title="Back to Top" class="btn-top" aria-label="Back to top">
+                <i class="bi bi-arrow-up-short"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle (Popper + JS) 5.3.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Toggler: burger ↔ X และรีเซ็ตเมื่อ collapse ปิด -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggler = document.querySelector('.navbar-toggler');
+            const navMain = document.getElementById('navMain');
+
+            // คลิกแล้วสลับเป็น X
+            toggler.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+
+            // เมื่อเมนูเปิด/ปิด จาก Bootstrap events
+            navMain.addEventListener('show.bs.collapse', function () {
+                toggler.classList.add('active');
+            });
+            navMain.addEventListener('hide.bs.collapse', function () {
+                toggler.classList.remove('active');
+            });
+
+            // Back to top
+            const btnTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                const y = document.documentElement.scrollTop || document.body.scrollTop;
+                btnTop.style.display = y > 100 ? 'flex' : 'none';
+            });
+            btnTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+
+</html>
